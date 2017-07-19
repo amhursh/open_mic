@@ -34,4 +34,8 @@ class JokeTest < Minitest::Test
     assert_equal "who's there", joke.answer
   end
 
+  def tets_user_can_learn_routine
+    skip
+  end
+
 end

@@ -24,4 +24,10 @@ class User
     end
   end
 
+  # def parse_routine(csv_file)
+  #   CSV.foreach(csv_file) do |joke|
+  #     joke.split(",")
+  #   end
+  # end
+
 end
