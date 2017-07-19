@@ -17,10 +17,21 @@ class JokeTest < Minitest::Test
   end
 
   def test_joke_has_id
-    skip
     joke = Joke.new({id: 1})
 
     assert_equal 1, joke.id
+  end
+
+  def test_joke_has_question
+    joke = Joke.new({id: 1, question: "knock, knock", answer: "who's there"})
+
+    assert_equal "knock, knock", joke.question
+  end
+
+  def test_joke_has_answer
+    joke = Joke.new({id: 1, question: "knock, knock", answer: "who's there"})
+
+    assert_equal "who's there", joke.answer
   end
 
 end
